@@ -22,7 +22,7 @@ function toggleLED() {
 
 function randomFlicker() {
   // Generate a random interval between 100 ms and 1000 ms
-  const interval = Math.random() * 900 + 100; // Adjust range for faster or slower flickering
+  const interval = Math.random() * 90 + 100; // Adjust range for faster or slower flickering
   setTimeout(() => {
     toggleLED();
     randomFlicker(); // Recursively start the next flicker
