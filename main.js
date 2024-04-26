@@ -17,7 +17,7 @@ function turnOffLED() {
 
 function toggleLED() {
   ledOn = !ledOn;
-  led.writeSync(ledOn);
+  led.writeSync(0 + ledOn);
 }
 
 function randomFlicker() {
