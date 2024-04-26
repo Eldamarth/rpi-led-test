@@ -17,5 +17,10 @@ function toggleLED() {
   ledOn = !ledOn;
   led.writeSync(ledOn);
 }
+turnOnLED();
+setTimeout(() => {
+  turnOffLED();
+  led.unexport();
+}, 6000);
 
-setInterval(toggleLED, 2000);
+// setInterval(toggleLED, 2000);
